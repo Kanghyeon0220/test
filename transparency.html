@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="doc_transparency">투명성 | Lemonade For All</title>
+  <meta name="description" content="레모네이드 포 올의 후원금 사용 기준(현장 85% · 운영 10% · 교육 5%)과 사업별 정산 내역." data-i18n-attr="content:desc_transparency">
+  <meta name="theme-color" content="#FDE68A">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lemonade For All">
+  <meta property="og:title" content="투명성 | Lemonade For All">
+  <meta property="og:description" content="레모네이드 포 올의 후원금 사용 기준(현장 85% · 운영 10% · 교육 5%)과 사업별 정산 내역.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:locale" content="ko_KR">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(localStorage.getItem('siteLang')==='en'){document.documentElement.classList.add('i18n-wait');setTimeout(function(){document.documentElement.classList.remove('i18n-wait')},1500)}}catch(e){}</script>
+</head>
+<body data-page="transparency">
+  <header class="site-header" id="siteHeader"><noscript><nav class="wrap" aria-label="주 메뉴"><a href="index.html">홈</a> · <a href="about.html">단체 소개</a> · <a href="activity.html">활동</a> · <a href="transparency.html">투명성</a> · <a href="donate.html">후원하기</a></nav></noscript></header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-header">
+      <div class="wrap">
+      <h1 data-i18n="tr_h1">투명성</h1>
+      <p data-i18n="tr_lead">모은 돈과 쓴 돈을 항목별로, 증빙과 함께 공개합니다.</p>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="tr-alloc">
+      <div class="wrap">
+        <h2 data-i18n="tr_alloc" class="section-title" id="tr-alloc">후원금 사용 기준</h2>
+        <p data-i18n="tr_alloc_p" class="section-lead">후원금은 아래 비율을 기준으로 사용합니다.</p>
+        <ul class="alloc" data-render="allocation"></ul>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="tr-ledger">
+      <div class="wrap">
+        <h2 data-i18n="tr_ledger" class="section-title" id="tr-ledger">정산 내역</h2>
+        <p data-i18n="tr_ledger_p" class="section-lead">사업별로 모금액, 지출 항목, 증빙을 공개합니다.</p>
+        <div data-render="ledger"></div>
+      </div>
+    </section>
+
+    <section class="section" data-requires="reports" aria-labelledby="tr-reports">
+      <div class="wrap">
+        <h2 data-i18n="tr_reports" class="section-title" id="tr-reports">보고서</h2>
+        <ul class="report-list" data-render="reports"></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap narrow prose">
+        <h2 data-i18n="tr_rules">공개 원칙</h2>
+        <ul>
+          <li data-i18n="tr_r1">지원 사업이 끝나면 모금액, 지출 항목, 영수증을 이 페이지에 공개합니다.</li>
+          <li data-i18n="tr_r2">물품 전달 과정은 협력 기관과 함께 사진과 기록으로 남깁니다.</li>
+          <li data-i18n="tr_r3">사용 내역에 대한 질문은 언제든 이메일로 받습니다.</li>
+        </ul>
+        <p class="mt-md"><a data-mail="contact" data-email-text href="#" class="link-arrow"></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="siteFooter"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

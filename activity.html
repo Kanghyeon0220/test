@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="doc_activity">활동 | Lemonade For All</title>
+  <meta name="description" content="캄보디아 물품 지원과 기부 인식 캠페인 등 레모네이드 포 올의 프로젝트와 활동 소식." data-i18n-attr="content:desc_activity">
+  <meta name="theme-color" content="#FDE68A">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lemonade For All">
+  <meta property="og:title" content="활동 | Lemonade For All">
+  <meta property="og:description" content="캄보디아 물품 지원과 기부 인식 캠페인 등 레모네이드 포 올의 프로젝트와 활동 소식.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:locale" content="ko_KR">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(localStorage.getItem('siteLang')==='en'){document.documentElement.classList.add('i18n-wait');setTimeout(function(){document.documentElement.classList.remove('i18n-wait')},1500)}}catch(e){}</script>
+</head>
+<body data-page="activity">
+  <header class="site-header" id="siteHeader"><noscript><nav class="wrap" aria-label="주 메뉴"><a href="index.html">홈</a> · <a href="about.html">단체 소개</a> · <a href="activity.html">활동</a> · <a href="transparency.html">투명성</a> · <a href="donate.html">후원하기</a></nav></noscript></header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-header">
+      <div class="wrap">
+      <h1 data-i18n="act_h1">활동</h1>
+      <p data-i18n="act_lead">레모네이드 포 올이 진행한 프로젝트와 소식을 한곳에 모았습니다.</p>
+      </div>
+    </div>
+
+    <section class="section" id="projects" aria-labelledby="act-proj">
+      <div class="wrap">
+        <h2 data-i18n="act_proj" class="section-title" id="act-proj">프로젝트</h2>
+        <ul class="card-grid">
+          <li class="card">
+            <div class="card-art"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="#3C3333" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M8 22 32 10l24 12v22L32 56 8 44Z"/><path d="M8 22l24 12 24-12M32 34v22"/><path d="M32 27c-3-4-9-3-9 2 0 4 9 9 9 9s9-5 9-9c0-5-6-6-9-2Z" fill="#FBBF24" stroke-width="2"/></svg></div>
+            <div class="card-body">
+              <span data-i18n="pc_badge" class="badge badge-done">1차 지원 완료 · 2026.03</span>
+              <h3>Lemonade For Cambodia</h3>
+              <p data-i18n="pc_desc">캄보디아 아동 보호시설에 의류와 보건 물품을 전달합니다. 현지 협력 기관을 통해 필요한 곳에 정확히 닿게 합니다.</p>
+              <a href="project-cambodia.html" class="link-arrow card-link" data-i18n="pc_link">자세히 보기</a>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-art"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="#3C3333" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M10 26v12h8l22 12V14L18 26Z" fill="#FBBF24"/><path d="M18 38l4 14h6l-3-12"/><path d="M48 24c3 2 4 5 4 8s-1 6-4 8M53 18c5 4 7 9 7 14s-2 10-7 14"/></svg></div>
+            <div class="card-body">
+              <span data-i18n="pg_badge" class="badge badge-done">학생 200여 명 참여 · 2026.05</span>
+              <h3 data-i18n="pg_title">기부 인식 캠페인</h3>
+              <p data-i18n="pg_desc">학교와 지역사회에서 나눔과 국제 문제를 함께 배우는 교육 캠페인을 엽니다.</p>
+              <a href="project-campaign.html" class="link-arrow card-link" data-i18n="pc_link">자세히 보기</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="news" aria-labelledby="act-news">
+      <div class="wrap narrow">
+        <h2 data-i18n="act_news" class="section-title" id="act-news">활동 소식</h2>
+        <ul class="news-list" data-render="news"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="photos" data-requires="gallery" aria-labelledby="act-photos">
+      <div class="wrap">
+        <h2 data-i18n="act_photos" class="section-title" id="act-photos">사진</h2>
+        <div class="filter-bar" data-render="gallery-filter"></div>
+        <ul class="gallery-grid" data-render="gallery"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="siteFooter"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

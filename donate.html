@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="doc_donate">후원하기 | Lemonade For All</title>
+  <meta name="description" content="금전 후원, 물품 후원, 봉사로 레모네이드 포 올과 함께하세요. 후원금 사용 내역은 모두 공개됩니다." data-i18n-attr="content:desc_donate">
+  <meta name="theme-color" content="#FDE68A">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lemonade For All">
+  <meta property="og:title" content="후원하기 | Lemonade For All">
+  <meta property="og:description" content="금전 후원, 물품 후원, 봉사로 레모네이드 포 올과 함께하세요. 후원금 사용 내역은 모두 공개됩니다.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:locale" content="ko_KR">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(localStorage.getItem('siteLang')==='en'){document.documentElement.classList.add('i18n-wait');setTimeout(function(){document.documentElement.classList.remove('i18n-wait')},1500)}}catch(e){}</script>
+</head>
+<body data-page="donate">
+  <header class="site-header" id="siteHeader"><noscript><nav class="wrap" aria-label="주 메뉴"><a href="index.html">홈</a> · <a href="about.html">단체 소개</a> · <a href="activity.html">활동</a> · <a href="transparency.html">투명성</a> · <a href="donate.html">후원하기</a></nav></noscript></header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-header">
+      <div class="wrap">
+      <h1 data-i18n="dn_h1">후원하기</h1>
+      <p data-i18n="dn_lead">여러분의 후원은 캄보디아 아이들에게 의류와 보건 물품으로 전달됩니다.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <h2 data-i18n="dn_how" class="section-title">후원은 이렇게 진행됩니다</h2>
+        <ol class="steps">
+          <li><strong data-i18n="dn_s1">문의</strong><span data-i18n="dn_s1_p">이메일로 후원 의사를 알려 주세요.</span></li>
+          <li><strong data-i18n="dn_s2">안내</strong><span data-i18n="dn_s2_p">계좌와 필요한 물품을 안내해 드립니다.</span></li>
+          <li><strong data-i18n="dn_s3">공개</strong><span data-i18n="dn_s3_p">사용 내역을 투명성 페이지에 공개합니다.</span></li>
+        </ol>
+
+        <div data-requires="donate.impact">
+          <h2 data-i18n="dn_impact" class="section-title">후원금으로 할 수 있는 일</h2>
+          <ul class="impact mb-lg" data-render="impact"></ul>
+        </div>
+
+        <div class="donate-grid">
+          <article class="donate-card" id="money">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#3C3333" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9.5h4.5a2 2 0 0 1 0 4H9.5a2 2 0 0 0 0 4H15M12 7v2M12 17.5v-0"/></svg></div>
+            <h2 data-i18n="dn_money">금전 후원</h2>
+            <p data-i18n="dn_money_p">후원금의 85%는 현장 지원에 직접 쓰이고, 10%는 운영비, 5%는 교육·캠페인에 쓰입니다.</p>
+            <div class="donate-account" data-render="account"></div>
+          </article>
+          <article class="donate-card" id="goods">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#3C3333" stroke-width="2" stroke-linejoin="round"><path d="M3 8l9-4 9 4v9l-9 4-9-4Z"/><path d="M3 8l9 4 9-4M12 12v9"/></svg></div>
+            <h2 data-i18n="dn_goods">물품 후원</h2>
+            <p data-i18n="dn_goods_p">깨끗한 의류, 위생용품, 학용품을 받습니다. 보내시기 전에 지금 필요한 물품을 먼저 확인해 주세요.</p>
+            <a data-i18n="dn_goods_btn" href="#" data-mail="goods" class="btn btn-primary">물품 후원 문의</a>
+          </article>
+          <article class="donate-card" id="volunteer">
+            <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#3C3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></div>
+            <h2 data-i18n="dn_vol">봉사 참여</h2>
+            <p data-i18n="dn_vol_p">캠페인 기획, 콘텐츠 제작, 현장 봉사 등 원하는 방식으로 함께할 수 있습니다.</p>
+            <a data-i18n="dn_vol_btn" href="#" data-mail="volunteer" class="btn btn-primary">봉사 신청하기</a>
+          </article>
+        </div>
+        <p class="section-lead mt-md" data-requires="donate.receiptNote" data-render="receipt-note"></p>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="dn-alloc">
+      <div class="wrap">
+        <h2 data-i18n="dn_alloc" class="section-title" id="dn-alloc">후원금 사용 기준</h2>
+        <ul class="alloc" data-render="allocation"></ul>
+        <p class="mt-md"><a data-i18n="alloc_link" href="transparency.html" class="link-arrow">정산 내역 보기</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="siteFooter"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
